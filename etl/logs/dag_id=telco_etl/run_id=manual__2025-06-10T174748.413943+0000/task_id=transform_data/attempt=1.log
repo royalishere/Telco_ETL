@@ -1,0 +1,6 @@
+{"timestamp":"2025-06-10T17:47:55.501374","level":"info","event":"DAG bundles loaded: dags-folder","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager"}
+{"timestamp":"2025-06-10T17:47:55.503840","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/telco_etl.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-06-10T17:47:58.221463Z","level":"info","event":"Cleaned data saved to /opt/airflow/data/clean/telco_clean.csv","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-10T17:47:58.237856Z","level":"info","event":"Quality issues logged at /opt/airflow/data/quality_logs/quality_log.csv","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-10T17:47:58.238606Z","level":"info","event":"Removed 11 / 7043 rows (0.16%)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-10T17:47:58.223993","level":"info","event":"Done. Returned value was: None","logger":"airflow.task.operators.airflow.providers.standard.operators.python.PythonOperator"}

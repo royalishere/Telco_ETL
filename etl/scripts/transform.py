@@ -1,10 +1,9 @@
 import pandas as pd
-import os
 
 def transform_data():
     combined_path = "/opt/airflow/data/telco_combined.csv"
     clean_path = "/opt/airflow/data/clean/telco_clean.csv"
-    log_path = "/opt/airflow/data/quality_  logs/quality_log.csv"
+    log_path = "/opt/airflow/data/quality_logs/quality_log.csv"
 
     # Read the combined dataframe
     df_all = pd.read_csv(combined_path)
@@ -58,4 +57,4 @@ def transform_data():
 
     # Alert condition: if more than 10% of rows are removed, raise an error
     if percent_removed > 10:
-        raise ValueError(f"❌ Alert: {percent_removed:.2f}% rows removed. Task failed.")
+        raise ValueError(f"Alert: {percent_removed:.2f}% rows removed. Task failed.")
